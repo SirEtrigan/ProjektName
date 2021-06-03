@@ -4,6 +4,8 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './navbar/navbar.component';
+import { MatTooltipModule } from '@angular/material/tooltip';
+
 
 @NgModule({
   declarations: [
@@ -13,7 +15,8 @@ import { NavbarComponent } from './navbar/navbar.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]
