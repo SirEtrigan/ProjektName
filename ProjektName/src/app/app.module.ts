@@ -22,12 +22,16 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatListModule } from '@angular/material/list';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatExpansionModule } from '@angular/material/expansion'; 
+import { LoginComponent } from './login/login.component';
+import { PasswordComponent } from './password/password.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    LoginComponent,
+    PasswordComponent
   ],
   imports: [
     BrowserModule,
