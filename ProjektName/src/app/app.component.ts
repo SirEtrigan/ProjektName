@@ -11,13 +11,8 @@ import {FormControl, Validators} from '@angular/forms';
 })
 export class AppComponent {
   title = 'ProjektName';
-}
-// Password Container Visibility
-export class FormFieldPrefixSuffixExample {
   hide = true;
-}
-// Email Error input
-export class FormFieldErrorExample {
+
   email = new FormControl('', [Validators.required, Validators.email]);
 
   getErrorMessage() {
@@ -27,5 +22,14 @@ export class FormFieldErrorExample {
 
     return this.email.hasError('email') ? 'Not a valid email' : '';
   }
+  
+}
+// Password Container Visibility
+export class FormFieldPrefixSuffixExample {
+  
+}
+// Email Error input
+export class FormFieldErrorExample {
+
 
 }

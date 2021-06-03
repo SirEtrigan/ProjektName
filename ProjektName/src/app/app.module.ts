@@ -11,8 +11,8 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {TextFieldModule} from '@angular/cdk/text-field';
-
-
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 
 
@@ -20,6 +20,7 @@ import {TextFieldModule} from '@angular/cdk/text-field';
 import { MatIconModule } from '@angular/material/icon'; 
 import { MatToolbarModule } from '@angular/material/toolbar'; 
 import { MatListModule } from '@angular/material/list';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -38,12 +39,13 @@ import { MatListModule } from '@angular/material/list';
     MatRadioModule,
     MatSnackBarModule,
     TextFieldModule, 
-    
-
+    MatFormFieldModule,
+    MatInputModule,
     MatIconModule,
     MatToolbarModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
