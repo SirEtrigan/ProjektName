@@ -17,6 +17,9 @@ import {TextFieldModule} from '@angular/cdk/text-field';
 
 
 
+import { MatIconModule } from '@angular/material/icon'; 
+import { MatToolbarModule } from '@angular/material/toolbar'; 
+import { MatListModule } from '@angular/material/list';
 
 
 @NgModule({
@@ -37,6 +40,10 @@ import {TextFieldModule} from '@angular/cdk/text-field';
     TextFieldModule, 
     
 
+    MatIconModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
