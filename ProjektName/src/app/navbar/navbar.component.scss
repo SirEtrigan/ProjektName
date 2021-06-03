@@ -1,7 +1,36 @@
-.mat-toolbar.mat-primary{
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+  .mat-expansion-panel-header-description {
+    flex-grow: 0;
+}
+
+mat-toolbar{
+    background-color: #201f1f;
     height: 100px;
 }
 
-.example-spacer {
-    flex: 1 1 auto;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
   }

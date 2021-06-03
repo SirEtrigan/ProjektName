@@ -1,35 +1,29 @@
 <!-- Banner -->
 <mat-sidenav-container class="sidenav-container">
-  <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
-    [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="(isHandset$ | async) === false">
-    <mat-toolbar>Menu</mat-toolbar>
-    <mat-nav-list>
-      <a mat-list-item href="#">Link 1</a>
-      <a mat-list-item href="#">Link 2</a>
-      <a mat-list-item href="#">Link 3</a>
-    </mat-nav-list>
-  </mat-sidenav>
   <mat-sidenav-content>
-    <mat-toolbar color="primary">
-      <span>test</span>
+    <mat-toolbar>
+      <span>Name</span>
     </mat-toolbar>
 
     <!-- Navbar -->
     <mat-accordion>
-      <mat-expansion-panel (opened)="panelOpenState = true"
-                           (closed)="panelOpenState = false">
+      <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
         <mat-expansion-panel-header>
           <mat-panel-title>
-            Self aware panel
+            Navigation
           </mat-panel-title>
           <mat-panel-description>
-            Geöffnet {{panelOpenState ? 'open' : 'closed'}}
+          {{panelOpenState ? 'Geöffnet' : 'Geschlossen'}}
           </mat-panel-description>
         </mat-expansion-panel-header>
-        <p>I'm visible because I am open</p>
+        <ul>
+          <li><a class="active" href="#">Home</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
       </mat-expansion-panel>
     </mat-accordion>
-    
 
   </mat-sidenav-content>
 </mat-sidenav-container>
