@@ -24,6 +24,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MatExpansionModule } from '@angular/material/expansion'; 
 import { LoginComponent } from './login/login.component';
 import { PasswordComponent } from './password/password.component';
+import { ContentComponent } from './content/content.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { PasswordComponent } from './password/password.component';
     AppComponent,
     NavbarComponent,
     LoginComponent,
-    PasswordComponent
+    PasswordComponent,
+    ContentComponent
   ],
   imports: [
     BrowserModule,
