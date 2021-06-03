@@ -5,6 +5,9 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatIconModule } from '@angular/material/icon'; 
+import { MatToolbarModule } from '@angular/material/toolbar'; 
+import { MatListModule } from '@angular/material/list';
 
 
 @NgModule({
@@ -16,7 +19,11 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     BrowserModule,
     BrowserAnimationsModule,
     MatSidenavModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatIconModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
