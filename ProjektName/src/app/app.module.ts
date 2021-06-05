@@ -25,6 +25,8 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { LoginComponent } from './login/login.component';
 import { PasswordComponent } from './password/password.component';
 import { ContentComponent } from './content/content.component';
+import { FooterComponent } from './footer/footer.component';
+import { AppRoutingModule } from './app-routing.module';
 
 
 @NgModule({
@@ -33,7 +35,8 @@ import { ContentComponent } from './content/content.component';
     NavbarComponent,
     LoginComponent,
     PasswordComponent,
-    ContentComponent
+    ContentComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -53,7 +56,8 @@ import { ContentComponent } from './content/content.component';
     MatSidenavModule,
     MatListModule,
     ReactiveFormsModule,
-    MatExpansionModule
+    MatExpansionModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
