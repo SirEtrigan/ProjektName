@@ -11,9 +11,9 @@ const routes: Routes = [
   { 
     path: 'news', component: NewsComponent 
   },
-  { 
-    path: '/', component: NavbarComponent 
-  },
+/*   { 
+    path: '', component: NavbarComponent 
+  }, */
   { 
     path: 'contact', component: ContactComponent 
   },

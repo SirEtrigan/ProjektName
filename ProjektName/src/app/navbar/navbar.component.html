@@ -2,7 +2,7 @@
 <mat-sidenav-container class="sidenav-container">
   <mat-sidenav-content>
     <mat-toolbar>
-      <span>Name</span>
+      <a id="titleName" routerLink="/">Name</a>
     </mat-toolbar>
 
     <!-- Navbar -->
@@ -17,10 +17,10 @@
           </mat-panel-description>
         </mat-expansion-panel-header>
         <ul>
-          <li><a class="active" href="#">Home</a></li>
-          <li><a href="#">News</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">About</a></li>
+        <a class="navbar" routerLink="/news">News</a>
+        <a class="navbar" routerLink="/contact">Contact</a>
+        <a class="navbar" routerLink="/about">About</a>
+        <a class="navbar" routerLink="/impressum">Impressum</a>
         </ul>
       </mat-expansion-panel>
     </mat-accordion>

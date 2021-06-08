@@ -1,4 +1,6 @@
-<app-navbar *ngIf="router.url === '/'">
+<div *ngIf="router.url === '/'">
+  <router-outlet></router-outlet>
+  <app-navbar></app-navbar>
   <h2>Music Website</h2>
 
   <!-- Login Field -->
@@ -12,11 +14,32 @@
       </div>
     </section>
   </div>
-  
+
   <app-content></app-content>
   <app-footer></app-footer>
-</app-navbar>
+</div>
 
-<app-navbar  *ngIf="router.url === '/about'">
-</app-navbar>
 
+<div *ngIf="router.url === '/about'">
+  <app-navbar></app-navbar>
+  <router-outlet></router-outlet>
+  <app-footer></app-footer>
+</div>
+
+<div *ngIf="router.url === '/news'">
+  <app-navbar></app-navbar>
+  <router-outlet></router-outlet>
+  <app-footer></app-footer>
+</div>
+
+<div *ngIf="router.url === '/impressum'">
+  <app-navbar></app-navbar>
+  <router-outlet></router-outlet>
+  <app-footer></app-footer>
+</div>
+
+<div *ngIf="router.url === '/contact'">
+  <app-navbar></app-navbar>
+  <router-outlet></router-outlet>
+  <app-footer></app-footer>
+</div>
