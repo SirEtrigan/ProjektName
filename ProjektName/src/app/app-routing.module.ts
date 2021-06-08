@@ -6,9 +6,12 @@ import { ContactComponent } from './contact/contact.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { AboutComponent } from './about/about.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   { 
+<<<<<<< HEAD
     path: 'news', component: NewsComponent 
   },
 /*   { 
@@ -16,13 +19,23 @@ const routes: Routes = [
   }, */
   { 
     path: 'contact', component: ContactComponent 
+=======
+    path: '', component: AppComponent 
+>>>>>>> fc692a23c916e0c7629289fe5540a5970db1e80c
   },
   { 
-    path: 'impressum', component: ImpressumComponent 
+    path: 'news', component: NewsComponent 
   },
-  { 
-    path: 'about', component: AboutComponent 
-  }
+
+  // { 
+  //   path: 'contact', component: ContactComponent 
+  // },
+  // { 
+  //   path: 'impressum', component: ImpressumComponent 
+  // },
+  // { 
+  //   path: 'about', component: AboutComponent 
+  // }
 ];
 
 @NgModule({

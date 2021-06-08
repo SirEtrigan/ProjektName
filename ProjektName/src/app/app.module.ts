@@ -13,8 +13,11 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {TextFieldModule} from '@angular/cdk/text-field';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> fc692a23c916e0c7629289fe5540a5970db1e80c
 import { MatIconModule } from '@angular/material/icon'; 
 import { MatToolbarModule } from '@angular/material/toolbar'; 
 import { MatListModule } from '@angular/material/list';
@@ -29,6 +32,8 @@ import { NewsComponent } from './news/news.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { ImpressumComponent } from './impressum/impressum.component';
+import { HomeComponent } from './home/home.component';
+//import { Routes, RouterModule } from '@angular/router' ;
 
 
 @NgModule({
@@ -43,6 +48,10 @@ import { ImpressumComponent } from './impressum/impressum.component';
     ContactComponent,
     AboutComponent,
     ImpressumComponent,
+<<<<<<< HEAD
+=======
+    HomeComponent
+>>>>>>> fc692a23c916e0c7629289fe5540a5970db1e80c
   ],
   imports: [
     BrowserModule,
@@ -63,7 +72,8 @@ import { ImpressumComponent } from './impressum/impressum.component';
     MatListModule,
     ReactiveFormsModule,
     MatExpansionModule,
-    AppRoutingModule
+    AppRoutingModule,
+   // RouterModule.forRoot(routes),
   ],
   providers: [],
   bootstrap: [AppComponent]
