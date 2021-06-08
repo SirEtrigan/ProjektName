@@ -27,6 +27,10 @@ import { PasswordComponent } from './password/password.component';
 import { ContentComponent } from './content/content.component';
 import { FooterComponent } from './footer/footer.component';
 import { AppRoutingModule } from './app-routing.module';
+import { NewsComponent } from './news/news.component';
+import { ContactComponent } from './contact/contact.component';
+import { AboutComponent } from './about/about.component';
+import { ImpressumComponent } from './impressum/impressum.component';
 
 
 @NgModule({
@@ -36,7 +40,11 @@ import { AppRoutingModule } from './app-routing.module';
     LoginComponent,
     PasswordComponent,
     ContentComponent,
-    FooterComponent
+    FooterComponent,
+    NewsComponent,
+    ContactComponent,
+    AboutComponent,
+    ImpressumComponent
   ],
   imports: [
     BrowserModule,

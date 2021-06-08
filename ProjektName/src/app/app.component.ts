@@ -1,8 +1,5 @@
 import { Component } from '@angular/core';
-
-
-
-
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -11,10 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ProjektName';
-
-
-
   
+  constructor(public router: Router){}
 }
 // Password Container Visibility
 export class FormFieldPrefixSuffixExample {
