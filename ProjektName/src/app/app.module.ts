@@ -13,10 +13,6 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {TextFieldModule} from '@angular/cdk/text-field';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-
-
-
-
 import { MatIconModule } from '@angular/material/icon'; 
 import { MatToolbarModule } from '@angular/material/toolbar'; 
 import { MatListModule } from '@angular/material/list';
@@ -31,6 +27,8 @@ import { NewsComponent } from './news/news.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { ImpressumComponent } from './impressum/impressum.component';
+import { HomeComponent } from './home/home.component';
+//import { Routes, RouterModule } from '@angular/router' ;
 
 
 @NgModule({
@@ -44,7 +42,8 @@ import { ImpressumComponent } from './impressum/impressum.component';
     NewsComponent,
     ContactComponent,
     AboutComponent,
-    ImpressumComponent
+    ImpressumComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -65,7 +64,8 @@ import { ImpressumComponent } from './impressum/impressum.component';
     MatListModule,
     ReactiveFormsModule,
     MatExpansionModule,
-    AppRoutingModule
+    AppRoutingModule,
+   // RouterModule.forRoot(routes),
   ],
   providers: [],
   bootstrap: [AppComponent]

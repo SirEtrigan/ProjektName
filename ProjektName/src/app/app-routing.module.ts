@@ -6,23 +6,26 @@ import { ContactComponent } from './contact/contact.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { AboutComponent } from './about/about.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   { 
+    path: '', component: AppComponent 
+  },
+  { 
     path: 'news', component: NewsComponent 
   },
-  { 
-    path: '/', component: NavbarComponent 
-  },
-  { 
-    path: 'contact', component: ContactComponent 
-  },
-  { 
-    path: 'impressum', component: ImpressumComponent 
-  },
-  { 
-    path: 'about', component: AboutComponent 
-  }
+
+  // { 
+  //   path: 'contact', component: ContactComponent 
+  // },
+  // { 
+  //   path: 'impressum', component: ImpressumComponent 
+  // },
+  // { 
+  //   path: 'about', component: AboutComponent 
+  // }
 ];
 
 @NgModule({
