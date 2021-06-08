@@ -10,32 +10,18 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
-  { 
-<<<<<<< HEAD
-    path: 'news', component: NewsComponent 
+  {
+    path: 'news', component: NewsComponent
   },
-/*   { 
-    path: '', component: NavbarComponent 
-  }, */
-  { 
-    path: 'contact', component: ContactComponent 
-=======
-    path: '', component: AppComponent 
->>>>>>> fc692a23c916e0c7629289fe5540a5970db1e80c
+  {
+    path: 'contact', component: ContactComponent
   },
-  { 
-    path: 'news', component: NewsComponent 
+  {
+    path: 'impressum', component: ImpressumComponent
   },
-
-  // { 
-  //   path: 'contact', component: ContactComponent 
-  // },
-  // { 
-  //   path: 'impressum', component: ImpressumComponent 
-  // },
-  // { 
-  //   path: 'about', component: AboutComponent 
-  // }
+  {
+    path: 'about', component: AboutComponent
+  }
 ];
 
 @NgModule({

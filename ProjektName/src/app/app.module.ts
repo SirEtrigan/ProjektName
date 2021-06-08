@@ -13,11 +13,8 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {TextFieldModule} from '@angular/cdk/text-field';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-<<<<<<< HEAD
 
 
-=======
->>>>>>> fc692a23c916e0c7629289fe5540a5970db1e80c
 import { MatIconModule } from '@angular/material/icon'; 
 import { MatToolbarModule } from '@angular/material/toolbar'; 
 import { MatListModule } from '@angular/material/list';
@@ -48,10 +45,7 @@ import { HomeComponent } from './home/home.component';
     ContactComponent,
     AboutComponent,
     ImpressumComponent,
-<<<<<<< HEAD
-=======
     HomeComponent
->>>>>>> fc692a23c916e0c7629289fe5540a5970db1e80c
   ],
   imports: [
     BrowserModule,
