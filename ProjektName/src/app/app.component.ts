@@ -8,8 +8,9 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
   title = 'ProjektName';
-  
-  constructor(public router: Router){}
+
+  constructor(public router: Router){
+  }
 }
 // Password Container Visibility
 export class FormFieldPrefixSuffixExample {
