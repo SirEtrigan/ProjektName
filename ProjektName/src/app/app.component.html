@@ -1,26 +1,4 @@
-<div *ngIf="router.url === '/'">
-  <router-outlet></router-outlet>
-  <app-navbar></app-navbar>
-  <h2>Music Website</h2>
-
-  <!-- Login Field -->
-  <div class="loginField">
-    <app-login></app-login>
-    <app-password></app-password>
-    <section>
-      <div class="example-button-row">
-        <button mat-raised-button>Login</button>
-        <button mat-raised-button>Register</button>
-      </div>
-    </section>
-  </div>
-
-  <app-content></app-content>
-  <app-footer></app-footer>
-</div>
-
-
-<div *ngIf="router.url === '/about'">
+<!-- <div *ngIf="router.url === '/about'">
   <app-navbar></app-navbar>
   <router-outlet></router-outlet>
   <app-footer></app-footer>
@@ -43,10 +21,17 @@
   <router-outlet></router-outlet>
   <app-footer></app-footer>
 </div>
-
-<!-- <a routerLink="/home" routerLinkActive="active"></a>
-<app-navbar>
-</app-navbar>
-<h2>Music Website</h2>
-
  -->
+
+<!--  <div *ngIf="router.url === '/'">
+  <router-outlet></router-outlet>
+  <app-navbar></app-navbar>
+  <h2>Music Website</h2>
+
+  <app-content></app-content>
+  <app-footer></app-footer>
+</div> -->
+
+<app-navbar></app-navbar>
+<router-outlet></router-outlet>
+<app-footer></app-footer>
