@@ -13,7 +13,7 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {TextFieldModule} from '@angular/cdk/text-field';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-
+import { RichTextEditorAllModule } from '@syncfusion/ej2-angular-richtexteditor';
 
 import { MatIconModule } from '@angular/material/icon'; 
 import { MatToolbarModule } from '@angular/material/toolbar'; 
@@ -30,6 +30,7 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { HomeComponent } from './home/home.component';
+import { BlogSiteComponent } from './blog-site/blog-site.component';
 //import { Routes, RouterModule } from '@angular/router' ;
 
 
@@ -45,7 +46,8 @@ import { HomeComponent } from './home/home.component';
     ContactComponent,
     AboutComponent,
     ImpressumComponent,
-    HomeComponent
+    HomeComponent,
+    BlogSiteComponent
   ],
   imports: [
     BrowserModule,
@@ -67,6 +69,7 @@ import { HomeComponent } from './home/home.component';
     ReactiveFormsModule,
     MatExpansionModule,
     AppRoutingModule,
+    RichTextEditorAllModule
    // RouterModule.forRoot(routes),
   ],
   providers: [],
