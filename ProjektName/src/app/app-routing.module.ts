@@ -4,6 +4,7 @@ import { NewsComponent } from './news/news.component';
 import { ContactComponent } from './contact/contact.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { AboutComponent } from './about/about.component';
+import { ContentComponent } from './content/content.component';
 
 const routes: Routes = [
   {
@@ -20,6 +21,9 @@ const routes: Routes = [
   },
   {
     path: 'content', component: ContactComponent
+  },
+  {
+    path: '', component: ContentComponent
   }
 ];
 
