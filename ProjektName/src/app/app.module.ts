@@ -5,16 +5,16 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MatTooltipModule } from '@angular/material/tooltip';
-import {MatCheckboxModule} from '@angular/material/checkbox';
-import {MatCardModule} from '@angular/material/card';
-import {MatButtonModule} from '@angular/material/button';
-import {MatRadioModule} from '@angular/material/radio';
-import {MatSnackBarModule} from '@angular/material/snack-bar';
-import {TextFieldModule} from '@angular/cdk/text-field';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { TextFieldModule } from '@angular/cdk/text-field';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { RichTextEditorAllModule } from '@syncfusion/ej2-angular-richtexteditor';
-
+import { MatGridListModule } from '@angular/material/grid-list'; 
 import { MatIconModule } from '@angular/material/icon'; 
 import { MatToolbarModule } from '@angular/material/toolbar'; 
 import { MatListModule } from '@angular/material/list';
@@ -69,7 +69,8 @@ import { BlogSiteComponent } from './blog-site/blog-site.component';
     ReactiveFormsModule,
     MatExpansionModule,
     AppRoutingModule,
-    RichTextEditorAllModule
+    RichTextEditorAllModule,
+    MatGridListModule
    // RouterModule.forRoot(routes),
   ],
   providers: [],

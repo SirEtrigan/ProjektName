@@ -1,22 +1,39 @@
 :host {
-    background-color: rgb(241, 241, 241);
-    margin-left: 35%;
-    margin-right: 35%;
-  }
+  background-color: rgb(241, 241, 241);
+  margin-right: 35%;
+}
 
-  mat-form-field{
-    width: 50%;
-    margin: 2px;
-  }
+mat-form-field {
+  width: 50%;
+  margin: 2px;
+}
 
-  #box{
-    margin-left: 30%;
-  }
+#box {
+  margin-left: 33%;
+}
 
-  mat-label{
-    color: black;
-  }
+mat-label {
+  color: black;
+}
 
-  .hint{
-    color: black !important;
-  }
+.hint {
+  color: black !important;
+}
+
+#headerBackground {
+  background-color: rgba(218, 218, 218, 0.671);
+  width: 100%;
+  height: 200px;
+}
+
+.headerTitle {
+  text-align: center;
+  margin: auto;
+  padding-top: 70px;
+  font-size: 3em;
+}
+
+button {
+  float: right;
+  margin-right: 50%;
+}
