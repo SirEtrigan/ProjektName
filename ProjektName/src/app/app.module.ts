@@ -20,9 +20,6 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatListModule } from '@angular/material/list';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatExpansionModule } from '@angular/material/expansion'; 
-
-import { PasswordComponent } from './password/password.component';
-import { ContentComponent } from './content/content.component';
 import { FooterComponent } from './footer/footer.component';
 import { AppRoutingModule } from './app-routing.module';
 import { NewsComponent } from './news/news.component';
@@ -30,17 +27,6 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { HomeComponent } from './home/home.component';
-import { BlogSiteComponent } from './blog-site/blog-site.component';
-import { BlogDetailsComponent } from './blog-details/blog-details.component';
-import { JwtModule } from '@auth0/angular-jwt';
-import { TagComponent } from './tag/tag.component';
-
-import { AlertDialogBodyComponent } from './alert-dialog-body/alert-dialog-body.component';
-import { FormsModule } from '@angular/forms';
-import { AllBlogsComponent } from './all-blogs/all-blogs.component';
-import { MatDialogModule } from '@angular/material/dialog';
-import {MatChipsModule} from '@angular/material/chips';
-
 //import { Routes, RouterModule } from '@angular/router' ;
 
 
@@ -48,23 +34,13 @@ import {MatChipsModule} from '@angular/material/chips';
   declarations: [
     AppComponent,
     NavbarComponent,
-
-    PasswordComponent,
-    ContentComponent,
     FooterComponent,
     NewsComponent,
     ContactComponent,
     AboutComponent,
     ImpressumComponent,
     HomeComponent,
-    BlogSiteComponent,
-
-    BlogDetailsComponent,
-    TagComponent,
-
-    AlertDialogBodyComponent,
-    AllBlogsComponent,
-
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
@@ -88,7 +64,6 @@ import {MatChipsModule} from '@angular/material/chips';
     AppRoutingModule,
     RichTextEditorAllModule,
     MatGridListModule
-   // RouterModule.forRoot(routes),
   ],
   providers: [],
   bootstrap: [AppComponent]
