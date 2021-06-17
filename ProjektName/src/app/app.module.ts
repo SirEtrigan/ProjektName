@@ -14,7 +14,6 @@ import {TextFieldModule} from '@angular/cdk/text-field';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { RichTextEditorAllModule } from '@syncfusion/ej2-angular-richtexteditor';
-
 import { MatIconModule } from '@angular/material/icon'; 
 import { MatToolbarModule } from '@angular/material/toolbar'; 
 import { MatListModule } from '@angular/material/list';
@@ -31,6 +30,19 @@ import { AboutComponent } from './about/about.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { HomeComponent } from './home/home.component';
 import { BlogSiteComponent } from './blog-site/blog-site.component';
+import { AdminComponent } from './admin/admin.component';
+import { AddBlogComponent } from './add-blog/add-blog.component';
+import { UpdateBlogComponent } from './update-blog/update-blog.component';
+import { BlogDetailsComponent } from './blog-details/blog-details.component';
+import { JwtModule } from '@auth0/angular-jwt';
+import { TagComponent } from './tag/tag.component';
+import { DialogBodyComponent } from './dialog-body/dialog-body.component';
+import { AlertDialogBodyComponent } from './alert-dialog-body/alert-dialog-body.component';
+import { FormsModule } from '@angular/forms';
+import { AllBlogsComponent } from './all-blogs/all-blogs.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import {MatChipsModule} from '@angular/material/chips';
+
 //import { Routes, RouterModule } from '@angular/router' ;
 
 
@@ -47,7 +59,16 @@ import { BlogSiteComponent } from './blog-site/blog-site.component';
     AboutComponent,
     ImpressumComponent,
     HomeComponent,
-    BlogSiteComponent
+    BlogSiteComponent,
+    AdminComponent,
+    AddBlogComponent,
+    UpdateBlogComponent,
+    BlogDetailsComponent,
+    TagComponent,
+    DialogBodyComponent,
+    AlertDialogBodyComponent,
+    AllBlogsComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -69,8 +90,18 @@ import { BlogSiteComponent } from './blog-site/blog-site.component';
     ReactiveFormsModule,
     MatExpansionModule,
     AppRoutingModule,
-    RichTextEditorAllModule
-   // RouterModule.forRoot(routes),
+    RichTextEditorAllModule,
+    MatDialogModule,
+    MatChipsModule,
+    FormsModule,
+    JwtModule.forRoot({
+      config: {
+        tokenGetter: function  tokenGetter() {
+             return localStorage.getItem('auth_token');},
+        allowedDomains: ['localhost:5000'],
+        disallowedRoutes: ['http://localhost:5000/login']
+      }
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
